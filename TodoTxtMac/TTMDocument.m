@@ -95,7 +95,7 @@ static NSString * const RelativeDueDatePattern = @"(?<=due:)\\S*";
     
     // Set up drag and drop for tableView.
     [self.tableView setDraggingSourceOperationMask:NSDragOperationEvery forLocal:NO];
-    [self.tableView registerForDraggedTypes:[NSArray arrayWithObject:NSStringPboardType]];
+    [self.tableView registerForDraggedTypes:[NSArray arrayWithObject:NSPasteboardTypeString]];
 
     [self setTaskListFont];
 
@@ -473,7 +473,7 @@ static NSString * const RelativeDueDatePattern = @"(?<=due:)\\S*";
     unichar keyChar = 9;
     NSString *keyDownString = [NSString stringWithCharacters:&keyChar length:1];
     NSPoint point = {0, 0};
-    NSEvent *newEvent =[NSEvent keyEventWithType:NSKeyDown
+    NSEvent *newEvent =[NSEvent keyEventWithType:NSEventTypeKeyDown
                                         location:point
                                    modifierFlags:0
                                        timestamp:[NSDate timeIntervalSinceReferenceDate]
@@ -1373,7 +1373,7 @@ static NSString * const RelativeDueDatePattern = @"(?<=due:)\\S*";
     
     NSString *clipboardTextString = [selectedTasksRawText componentsJoinedByString:@"\n"];
     [[NSPasteboard generalPasteboard] clearContents];
-    [[NSPasteboard generalPasteboard] setString:clipboardTextString forType:NSStringPboardType];
+    [[NSPasteboard generalPasteboard] setString:clipboardTextString forType:NSPasteboardTypeString];
 }
 
 // Override normal cut handler to cut selected tasks from the task list.
@@ -1403,7 +1403,7 @@ static NSString * const RelativeDueDatePattern = @"(?<=due:)\\S*";
     // Check active sort menu item.
     if ([menuItem.parentItem tag] == SORTMENUTAG) {
         if (menuItem.tag == self.activeSortType) {
-            [menuItem setState:NSOnState];
+            [menuItem setState:NSControlStateValueOn];
         } else {
             [menuItem setState:NSOffState];
         }
@@ -1411,9 +1411,9 @@ static NSString * const RelativeDueDatePattern = @"(?<=due:)\\S*";
     // Check active filter menu item.
     if ([menuItem.parentItem tag] == FILTERMENUTAG) {
         if (menuItem.tag == self.activeFilterPredicateNumber) {
-            [menuItem setState:NSOnState];
+            [menuItem setState:NSControlStateValueOn];
         } else {
-            [menuItem setState:NSOffState];
+            [menuItem setState:NSControlStateValueOff];
         }
     }
     // Toggle show/hide status bar menu title

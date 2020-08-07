@@ -78,37 +78,37 @@
     }
 
     // command+c to copy selected tasks
-    if ((flags & NSCommandKeyMask) &&
+    if ((flags & NSEventModifierFlagCommand) &&
         (keyChar == 'c')) {
         [self translateKeyDownEvent:theEvent toKeyDown:keyChar sendToControl:[self window]];
         return;
     }
 
     // handle command+option+arrow key combinations
-    if ((flags & NSCommandKeyMask) &&
-        (flags & NSNumericPadKeyMask) &&
-        (flags & NSAlternateKeyMask)) {
+    if ((flags & NSEventModifierFlagCommand) &&
+        (flags & NSEventModifierFlagNumericPad) &&
+        (flags & NSEventModifierFlagOption)) {
         [self translateKeyDownEvent:theEvent toKeyDown:keyChar sendToControl:[self window]];
         return;
     }
     
     // handle command+arrow key combinations
-    if ((flags & NSCommandKeyMask) &&
-        (flags & NSNumericPadKeyMask)) {
+    if ((flags & NSEventModifierFlagCommand) &&
+        (flags & NSEventModifierFlagNumericPad)) {
         [self translateKeyDownEvent:theEvent toKeyDown:keyChar sendToControl:[self window]];
         return;
     }
     
     // handle option + key shortcuts
     // This fixes a bug in which Option+s jumps to the first task starting with the letter 's'.
-    if (flags & NSAlternateKeyMask) {
+    if (flags & NSEventModifierFlagOption) {
         [self translateKeyDownEvent:theEvent toKeyDown:keyChar sendToControl:[self window]];
         return;
     }
     
     // do not override the super for other special key combinations
-    if ((flags & NSCommandKeyMask) ||
-        (flags & NSControlKeyMask)) {
+    if ((flags & NSEventModifierFlagCommand) ||
+        (flags & NSEventModifierFlagControl)) {
         [super keyDown:theEvent];
         return;
     }
@@ -157,7 +157,7 @@
                     toKeyDown:(unichar)keyDown
                 sendToControl:(id)targetControl {
     NSString *keyDownString = [NSString stringWithCharacters:&keyDown length:1];
-    NSEvent *newEvent =[NSEvent keyEventWithType:NSKeyDown
+    NSEvent *newEvent =[NSEvent keyEventWithType:NSEventTypeKeyDown
                                         location:theEvent.locationInWindow
                                    modifierFlags:theEvent.modifierFlags
                                        timestamp:theEvent.timestamp

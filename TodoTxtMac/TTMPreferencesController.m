@@ -94,7 +94,7 @@
     [panel setPrompt:prompt];
     [panel setAllowedFileTypes:@[@"txt", @"TXT", @"todo", @"TODO", @""]];
     
-    if ([panel runModal] == NSFileHandlingPanelOKButton) {
+    if ([panel runModal] == NSModalResponseOK) {
         for (NSURL *fileURL in [panel URLs]) {
             [[NSUserDefaults standardUserDefaults] setValue:[fileURL path] forKey:userDefaultsKey];
         }

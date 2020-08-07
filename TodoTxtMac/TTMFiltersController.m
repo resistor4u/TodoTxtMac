@@ -93,15 +93,15 @@
     NSUInteger flags = [theEvent modifierFlags];
     NSString *passedChar = [theEvent charactersIgnoringModifiers];
 
-    if ((flags & NSCommandKeyMask) &&
-        (flags & NSShiftKeyMask) &&
+    if ((flags & NSEventModifierFlagCommand) &&
+        (flags & NSEventModifierFlagShift) &&
         ([passedChar isEqualToString:@"{"])) {
         [self.tabView selectPreviousTabViewItem:self];
         return;
     }
 
-    if ((flags & NSCommandKeyMask) &&
-        (flags & NSShiftKeyMask) &&
+    if ((flags & NSEventModifierFlagCommand) &&
+        (flags & NSEventModifierFlagShift) &&
         ([passedChar isEqualToString:@"}"])) {
         [self.tabView selectNextTabViewItem:self];
         return;
