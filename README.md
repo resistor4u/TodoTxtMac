@@ -2,7 +2,7 @@
 
 # Overview
 
-TodoTxtMac is a minimalist, keyboard-driven to-do manager for Mac OS X that conforms to the todo.txt format spec. Version 2.0.0 and up are supported only on Mac OS X 10.11 (El Capitan). Version 1.6.1 can be used on lower versions of Mac OS X, down to Mac OS X 10.8, though support is not guaranteed.
+TodoTxtMac is a minimalist, keyboard-driven to-do manager for macOS that conforms to the todo.txt format spec. This fork adds the much needed dark mode, and blindly resolves deprecation warnings.
 
 # Goals
 
@@ -174,10 +174,6 @@ Your todo.txt file can get modified outside of TodoTxtMac, especially if you are
 1. Reload your TodoTxtMac file manually (press `.`) before making changes to it, if you believe the file was updated (by Dropbox for example) recently.
 2. Close TodoTxtMac when not using it for extended periods.
 3. When presented with the option to "Save Anyway" or "Revert" changes, always revert changes. You will have to re-do your last action in TodoTxtMac, but you will not lose the changes that originated outside the application.
-
-## Will this project be ported from Objective C to Swift?
-
-When Apple officially deprecates Objective C, the plan is to migrate this project to Swift.
 
 # License
 
