@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:sparkle="https://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="https://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>TodoTxtMac Changelog</title>
+        <link>https://mjdescy.github.io/TodoTxtMac/todotxtmac-appcast.xml</link>
+        <language>en</language>
+
+        <item>
+            <title>Version 2.4.0</title>
+            <description>
+            Made changes to fix macOS Sierra compatibility issues.
+            </description>
+            <sparkle:releaseNotesLink>
+            https://mjdescy.github.io/TodoTxtMac/release-notes/release-notes-v2.4.0.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Friday, 20 Jan 2017 16:45 -0500</pubDate>
+            <enclosure url="https://github.com/mjdescy/TodoTxtMac/releases/download/2.4.0/TodoTxtMac.app.zip" sparkle:version="2032" sparkle:shortVersionString="2.4.0" length="2768001" type="application/octet-stream" sparkle:dsaSignature="MC0CFGje8FmLco01ZWNykV1syRnFpodzAhUAvO/X0B58/M+MXyGeHrrIs2ParO4="/>
+            <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+        </item>
+
+        <item>
+            <title>Version 2.3.2</title>
+            <description>
+            Improvements to filters and windowing features. Bug fixes.
+            </description>
+            <sparkle:releaseNotesLink>
+            https://mjdescy.github.io/TodoTxtMac/release-notes/release-notes-v2.3.2.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Wednesday, 17 Aug 2016 20:10 -0500</pubDate>
+            <enclosure url="https://github.com/mjdescy/TodoTxtMac/releases/download/2.3.2/TodoTxtMac.app.zip" sparkle:version="2029" sparkle:shortVersionString="2.3.2" length="2764773" type="application/octet-stream" sparkle:dsaSignature="MCwCFAlgrUIh0BHMpDvRiGJOBmLLtJOKAhR2FopKojyut4Lqx59gSWr5/KXdXw=="/>
+            <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+        </item>
+
+        <item>
+            <title>Version 2.3.1</title>
+            <description>
+            Improvements to filters and windowing features. Bug fixes.
+            </description>
+            <sparkle:releaseNotesLink>
+            https://mjdescy.github.io/TodoTxtMac/release-notes/release-notes-v2.3.1.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Friday, 12 Aug 2016 10:58 -0500</pubDate>
+            <enclosure url="https://github.com/mjdescy/TodoTxtMac/releases/download/2.3.1/TodoTxtMac.app.zip" sparkle:version="2028" sparkle:shortVersionString="2.3.1" length="2620349" type="application/octet-stream" sparkle:dsaSignature="MCwCFDf9Ca45wnx40yxlfX0atS9cZ6bBAhRk2f0URrjNtGZ39nNjQSmbdlvzNA=="/>
+            <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+        </item>
+
+        <item>
+            <title>Version 2.3.0</title>
+            <description>
+            Automatically reloads files. Added context menu to task list.
+            </description>
+            <sparkle:releaseNotesLink>
+            https://mjdescy.github.io/TodoTxtMac/release-notes/release-notes-v2.3.0.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Sunday, 29 Jul 2016 23:00 -0500</pubDate>
+            <enclosure url="https://github.com/mjdescy/TodoTxtMac/releases/download/2.3.0/TodoTxtMac.app.zip" sparkle:version="2025" sparkle:shortVersionString="2.3.0" length="2894031" type="application/octet-stream" sparkle:dsaSignature="MCwCFDAtDjUjMfyimv/Ip7W7dC4Tqp7XAhQnDWhPVPIKqbQCi9E7qakB/RJTYg=="/>
+            <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+        </item>
+
+        <item>
+            <title>Version 2.2.2</title>
+            <description>
+            Fixed bug related to locales
+            </description>
+            <sparkle:releaseNotesLink>
+            https://mjdescy.github.io/TodoTxtMac/release-notes/release-notes-v2.2.2.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Sunday, 24 Apr 2016 20:39 -0500</pubDate>
+            <enclosure url="https://github.com/mjdescy/TodoTxtMac/releases/download/2.2.2/TodoTxtMac.app.zip" sparkle:version="2022" sparkle:shortVersionString="2.2.2" length="2755701" type="application/octet-stream" sparkle:dsaSignature="MC0CFCDT8i6+cL3UN72I3bCp8pB02g8iAhUAkN2yxRFUvs3+lOw1QyM35WXNRMg="/>
+            <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+        </item>
+
+        <item>
+            <title>Version 2.2.1</title>
+            <description>
+            Fixed bug related to strict recurring tasks
+            </description>
+            <sparkle:releaseNotesLink>
+            https://mjdescy.github.io/TodoTxtMac/release-notes/release-notes-v2.2.1.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Wednesday, 7 Apr 2016 12:25 -0500</pubDate>
+            <enclosure url="https://github.com/mjdescy/TodoTxtMac/releases/download/2.2.1/TodoTxtMac.app.zip" sparkle:version="2021" sparkle:shortVersionString="2.2.1" length="2755404" type="application/octet-stream" sparkle:dsaSignature="MC0CFEImTVXfD8+CG2gaA8w+fi8APN54AhUAvDL3SvvJ/gV2bHcMTluyqZow0mw="/>
+            <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+        </item>
+
+        <item>
+            <title>Version 2.2.0</title>
+            <description>
+            Added support for recurring tasks and hidden tasks. Fixed bugs related to reloading files.
+            </description>
+            <sparkle:releaseNotesLink>
+            https://mjdescy.github.io/TodoTxtMac/release-notes/release-notes-v2.2.0.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Wednesday, 6 Apr 2016 22:00 -0500</pubDate>
+            <enclosure url="https://github.com/mjdescy/TodoTxtMac/releases/download/2.2.0/TodoTxtMac.app.zip" sparkle:version="2020" sparkle:shortVersionString="2.2.0" length="2755271" type="application/octet-stream" sparkle:dsaSignature="MCwCFExuYdxtv0HqfBVrhKflerigldFWAhRDt0g2+CJxR0hYu33iD3MQwC/7Rg=="/>
+            <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+        </item>
+
+        <item>
+            <title>Version 2.1.1</title>
+            <description>
+            Vast improvements to autocompletion of projects and contexts. Fixed an intermittent problem in which Enter or "U" would not edit a task but would instead make the selection jump to another task.
+            </description>
+            <sparkle:releaseNotesLink>
+            https://mjdescy.github.io/TodoTxtMac/release-notes/release-notes-v2.1.1.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Tuesday, 22 Mar 2016 22:00 -0500</pubDate>
+            <enclosure url="https://github.com/mjdescy/TodoTxtMac/releases/download/2.1.1/TodoTxtMac.app.zip" sparkle:version="2010" sparkle:shortVersionString="2.1.1" length="2731532" type="application/octet-stream" sparkle:dsaSignature="MC0CFQCrUzmDoTDVCVNSa4q97UDL2m1fkAIUD316c3hqA6vgTjGHOslZnv+KjnM="/>
+            <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+        </item>
+
+        <item>
+            <title>Version 2.1.0</title>
+            <description>
+            Changes to threshold state. Added "hide future tasks (threshold filter)" option. Added links to Plaintext Productivity web site.            
+            </description>
+            <sparkle:releaseNotesLink>
+            https://mjdescy.github.io/TodoTxtMac/release-notes/release-notes-v2.1.0.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Thursday, 17 Mar 2016 22:00 -0500</pubDate>
+            <enclosure url="https://github.com/mjdescy/TodoTxtMac/releases/download/2.1.0/TodoTxtMac.app.zip" sparkle:version="2006" sparkle:shortVersionString="2.1.0" length="2585752" type="application/octet-stream" sparkle:dsaSignature="MCwCFATF5wAM1faVpzqXGx4+/Aqqlx8dAhQVGydjGnpMRJU0VFLpmB5YLcBmnw=="/>
+            <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+        </item>
+
+        <item>
+            <title>Version 2.0.0</title>
+            <description>
+            UI update. Updated Sparkle framework to fix possible security issue. Fixed a bug that could duplicate the task list. Changed minimum supported OS X version to 10.11 El Capitan. 
+            </description>
+            <sparkle:releaseNotesLink>
+            https://mjdescy.github.io/TodoTxtMac/release-notes/release-notes-v2.0.0.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Friday, 11 Mar 2016 22:00 -0500</pubDate>
+            <enclosure url="https://github.com/mjdescy/TodoTxtMac/releases/download/2.0.0/TodoTxtMac.app.zip" sparkle:version="2000" sparkle:shortVersionString="2.0.0" length="2728330" type="application/octet-stream" sparkle:dsaSignature="MC0CFBGmETCKSSYVTkU4ycEcW/I7I34sAhUAo3oNnErHszVyAx0d2EakFEgT9zI="/>
+            <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+        </item>
+
+        <item>
+            <title>Version 1.6.1</title>
+            <description>
+            Fixed an infinite loop/hang that was caused by using Esc to cancel edits.
+            </description>
+            <sparkle:releaseNotesLink>
+            https://mjdescy.github.io/TodoTxtMac/release-notes/release-notes-v1.6.1.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Friday, 3 Jul 2015 21:23 -0500</pubDate>
+            <enclosure url="https://github.com/mjdescy/TodoTxtMac/releases/download/1.6.1/TodoTxtMac.app.zip" sparkle:version="1.6.1" length="2670360" type="application/octet-stream" sparkle:dsaSignature="MC0CFQCa3TetzJmBjibJuzNDB9VezrPH8wIUL3wSfhg3jZU3ESs+bT0+S7bnrtU="/>
+            <sparkle:minimumSystemVersion>10.8</sparkle:minimumSystemVersion>
+        </item>
+    </channel>
+</rss>
