@@ -2,7 +2,14 @@
 
 # Overview
 
-TodoTxtMac is a minimalist, keyboard-driven to-do manager for macOS that conforms to the todo.txt format spec. This fork adds the much needed dark mode, and blindly resolves deprecation warnings.
+TodoTxtMac is a minimalist, keyboard-driven to-do manager for macOS that conforms to the todo.txt format spec.
+
+# Fork Overview
+
+- Dark Mode
+- App Sandbox
+- Big Sur AppIcon
+- Updated Sparkle Framework
 
 # Goals
 
@@ -30,6 +37,7 @@ From a design perspective the goal is to be the fastest, simplest, and cleanest 
 - Automatic update checking.
 - Displays general metadata (task counts, etc.) about the task list.
 - Undo/redo support.
+- Dark Mode
 
 ## Adding/removing tasks
 
@@ -192,6 +200,8 @@ I am striving for very clean code. I am following the following general coding c
 - Use descriptive variable and method names.
 
 # Credits/Thanks
+
+Thanks to Michael Descy for originally creating TodoTxtMac.
 
 Thanks to Gina Trapani who created the [Todo.txt][] format and the community of developers who created the command line tools and iOS/Android apps.
 
