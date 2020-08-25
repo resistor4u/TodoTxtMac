@@ -6,6 +6,19 @@
         <language>en</language>
 
         <item>
+            <title>Version 2.4.2</title>
+            <description>
+            Added Sandbox and updated Sparkle Framework.
+            </description>
+            <sparkle:releaseNotesLink>
+            https://github.com/thebitstick/TodoTxtMac/releases/tag/v2.4.2
+            </sparkle:releaseNotesLink>
+            <pubDate>Tuesday, 25 Aug 2020 16:45 -0500</pubDate>
+            <enclosure url="https://github.com/thebitstick/TodoTxtMac/releases/download/v2.4.1/TodoTxtMac.app.zip" sparkle:version="2034" sparkle:shortVersionString="2.4.2" length="2768001" type="application/octet-stream" sparkle:dsaSignature="MC0CFGje8FmLco01ZWNykV1syRnFpodzAhUAvO/X0B58/M+MXyGeHrrIs2ParO4="/>
+            <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
+        </item>
+
+        <item>
             <title>Version 2.4.0</title>
             <description>
             Made changes to fix macOS Sierra compatibility issues.
