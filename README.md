@@ -191,13 +191,6 @@ I am striving for very clean code. I am following the following general coding c
 - Always use curly braces for conditionals and loops.
 - Use descriptive variable and method names.
 
-## Pull Requests
-
-The project uses [git-flow] to implement Vincent Driessen's [branching model]. All pull requests should be directed at the "develop" branch.
-
-[git-flow]: https://github.com/nvie/gitflow
-[branching model]: http://nvie.com/posts/a-successful-git-branching-model/
-
 # Credits/Thanks
 
 Thanks to Gina Trapani who created the [Todo.txt][] format and the community of developers who created the command line tools and iOS/Android apps.
