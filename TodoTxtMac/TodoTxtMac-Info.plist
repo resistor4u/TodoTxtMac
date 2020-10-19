@@ -9,18 +9,32 @@
 		<dict>
 			<key>CFBundleTypeExtensions</key>
 			<array>
+				<string>todo</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>TodoTxt.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>TodoTxt</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSTypeIsPackage</key>
+			<false/>
+			<key>NSDocumentClass</key>
+			<string>TTMDocument</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
 				<string>txt</string>
 			</array>
 			<key>CFBundleTypeIconFile</key>
-			<string></string>
+			<string>TodoTxt.icns</string>
 			<key>CFBundleTypeName</key>
 			<string>DocumentType</string>
-			<key>CFBundleTypeOSTypes</key>
-			<array>
-				<string>????</string>
-			</array>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
+			<key>LSTypeIsPackage</key>
+			<integer>0</integer>
 			<key>NSDocumentClass</key>
 			<string>TTMDocument</string>
 		</dict>
