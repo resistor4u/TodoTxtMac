@@ -52,7 +52,7 @@
 #import "TTMDocumentStatusBarText.h"
 
 // Default user preference values, including those for saved filters
-static NSDictionary *defaultValues() {
+static NSDictionary *defaultValues(void) {
     
     static NSData *defaultPredicateData = nil;
     if (defaultPredicateData == nil) {
@@ -113,7 +113,7 @@ static NSDictionary *defaultValues() {
 
 // Default user preference values, excluding those for saved filters.
 // Defined to help allow users to reset preferences without losing saved filters.
-static NSDictionary *defaultValuesExcludingFilters() {
+static NSDictionary *defaultValuesExcludingFilters(void) {
     static NSMutableDictionary *defaults = nil;
     if (defaults == nil) {
         defaults = [NSMutableDictionary dictionaryWithDictionary:defaultValues()];

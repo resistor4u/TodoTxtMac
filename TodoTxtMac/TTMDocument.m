@@ -893,7 +893,7 @@ static NSString * const RelativeDueDatePattern = @"(?<=due:)\\S*";
     [alert addButtonWithTitle:@"OK"];
     [alert addButtonWithTitle:@"Cancel"];
     NSDatePicker *input = [[NSDatePicker alloc] initWithFrame:NSMakeRect(0, 0, 110, 24)];
-    [input setDatePickerElements:NSYearMonthDayDatePickerElementFlag];
+    [input setDatePickerElements:NSDatePickerElementFlagYearMonthDay];
     [input setDateValue:[TTMDateUtility today]];
     [alert setAccessoryView:input];
     
@@ -1012,7 +1012,7 @@ static NSString * const RelativeDueDatePattern = @"(?<=due:)\\S*";
     [alert addButtonWithTitle:@"OK"];
     [alert addButtonWithTitle:@"Cancel"];
     NSDatePicker *input = [[NSDatePicker alloc] initWithFrame:NSMakeRect(0, 0, 110, 24)];
-    [input setDatePickerElements:NSYearMonthDayDatePickerElementFlag];
+    [input setDatePickerElements:NSDatePickerElementFlagYearMonthDay];
     [input setDateValue:[TTMDateUtility today]];
     [alert setAccessoryView:input];
     
