@@ -3,10 +3,8 @@
 # Mac OS X Finder and whatnot
 .DS_Store
 
-
 # Sparkle distribution Private Key (Don't check me in!)
 dsa_priv.pem
-
 
 # XCode (and ancestors) per-user config (very noisy, and not relevant)
 *.mode1
@@ -17,12 +15,10 @@ dsa_priv.pem
 *.pbxuser
 
 # Xcode 4 http://stackoverflow.com/questions/49478/git-ignore-file-for-xcode-projects
-xcuserdata
-
+#xcuserdata
 
 # Generated files
 VersionX-revision.h
-
 
 # build products
 build/
@@ -33,7 +29,6 @@ build/
 .svn
 CVS
 
-
 # automatic backup files
 *~.nib
 *.swp
@@ -42,4 +37,3 @@ CVS
 Backup[ ]of[ ]*.pages/
 Backup[ ]of[ ]*.key/
 Backup[ ]of[ ]*.numbers/
-
