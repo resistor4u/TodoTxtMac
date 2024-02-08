@@ -20,8 +20,6 @@
 		002218EA1AA17B9B00D6F3A0 /* TTMTask_MarkIncomplete_UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 002218E91AA17B9B00D6F3A0 /* TTMTask_MarkIncomplete_UnitTests.m */; };
 		002EAE5918DBD24C008E7517 /* TTMAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EAE5818DBD24C008E7517 /* TTMAppController.m */; };
 		002EAE5E18DCAE5C008E7517 /* TTMFilterPredicates.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EAE5D18DCAE5C008E7517 /* TTMFilterPredicates.m */; };
-		00308E161C90FD260007681C /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 00308E131C90FD120007681C /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		00308E171C90FD390007681C /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00308E131C90FD120007681C /* Sparkle.framework */; };
 		003647E1193D562900FDF67A /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 003647E0193D562900FDF67A /* dsa_pub.pem */; };
 		003F958F1AA2948D00A1FF47 /* TTMTask_ToggleCompletion_UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 003F958E1AA2948D00A1FF47 /* TTMTask_ToggleCompletion_UnitTests.m */; };
 		003F95911AA2965600A1FF47 /* TTMDateUtility_UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 003F95901AA2965600A1FF47 /* TTMDateUtility_UnitTests.m */; };
@@ -100,9 +98,6 @@
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
-			files = (
-				00308E161C90FD260007681C /* Sparkle.framework in CopyFiles */,
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -124,7 +119,6 @@
 		002EAE5818DBD24C008E7517 /* TTMAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMAppController.m; sourceTree = "<group>"; };
 		002EAE5C18DCAE5C008E7517 /* TTMFilterPredicates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMFilterPredicates.h; sourceTree = "<group>"; };
 		002EAE5D18DCAE5C008E7517 /* TTMFilterPredicates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMFilterPredicates.m; sourceTree = "<group>"; };
-		00308E131C90FD120007681C /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		003647E0193D562900FDF67A /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		003F958E1AA2948D00A1FF47 /* TTMTask_ToggleCompletion_UnitTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMTask_ToggleCompletion_UnitTests.m; sourceTree = "<group>"; };
 		003F95901AA2965600A1FF47 /* TTMDateUtility_UnitTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMDateUtility_UnitTests.m; sourceTree = "<group>"; };
@@ -222,7 +216,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				00B4CB9C18B43E8400313DAA /* Cocoa.framework in Frameworks */,
-				00308E171C90FD390007681C /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +316,6 @@
 		00B4CB9A18B43E8400313DAA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				00308E131C90FD120007681C /* Sparkle.framework */,
 				00B4CB9B18B43E8400313DAA /* Cocoa.framework */,
 				00B4CBBD18B43E8500313DAA /* XCTest.framework */,
 				00B4CB9D18B43E8400313DAA /* Other Frameworks */,

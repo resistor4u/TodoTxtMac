@@ -23,12 +23,6 @@
                                     <action selector="orderFrontStandardAboutPanel:" target="-2" id="142"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Check for Updates..." id="xc3-uB-1hs">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <connections>
-                                    <action selector="checkForUpdates:" target="565-dx-Ism" id="J12-bH-I7r"/>
-                                </connections>
-                            </menuItem>
                             <menuItem isSeparatorItem="YES" id="236">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
@@ -577,7 +571,6 @@ CA
                 <outlet property="appController" destination="7QU-ZR-XSK" id="Jmb-5i-JMS"/>
             </connections>
         </customObject>
-        <customObject id="565-dx-Ism" customClass="SUUpdater"/>
         <customObject id="oKW-8b-22O" customClass="NSDocumentController"/>
         <userDefaultsController representsSharedInstance="YES" id="w2u-Zb-wUd"/>
         <menuItem title="Item" id="m59-bi-F45">

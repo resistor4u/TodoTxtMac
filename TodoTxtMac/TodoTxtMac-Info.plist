@@ -65,10 +65,6 @@
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
-	<key>SU</key>
-	<string></string>
-	<key>SUAllowsAutomaticUpdates</key>
-	<false/>
 	<key>SUFeedURL</key>
 	<string>https://raw.githubusercontent.com/thebitstick/TodoTxtMac/master/todotxtmac-appcast.xml</string>
 	<key>SUPublicDSAKeyFile</key>

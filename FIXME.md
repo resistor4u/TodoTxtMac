@@ -1,0 +1,2 @@
+- [ ] Selecting any check boxes in the Preferences > Fonts & Colors > Colors tags (Projects, Contexts, etc.) with the main Highlight box checked causes the app not to load any files with projects tags. It also causes the tasks in the main table view to be truncated for files without the tags.
+- [ ] Option to open given list as default does not work.
