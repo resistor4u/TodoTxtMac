@@ -1403,7 +1403,7 @@ static NSString * const RelativeDueDatePattern = @"(?<=due:)\\S*";
         if (menuItem.tag == self.activeSortType) {
             [menuItem setState:NSControlStateValueOn];
         } else {
-            [menuItem setState:NSOffState];
+            [menuItem setState:NSControlStateValueOff];
         }
     }
     // Check active filter menu item.
