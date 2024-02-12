@@ -49,12 +49,27 @@
 
 @implementation NSMutableAttributedString (ColorRegExMatches)
 
+/*
 - (void)applyColor:(NSColor*)color toRegexPatternMatches:(NSString*)regExPattern {
     NSArray *matches = [self.string matchesWithDetails:RX(regExPattern)];
     for (RxMatch *match in matches) {
         [self addAttribute:NSForegroundColorAttributeName
                    value:color
                    range:match.range];
+    }
+}
+*/
+ 
+- (void)applyColor:(NSColor*)color toRegexPatternMatches:(NSString*)regExPattern {
+    if (color == nil) {
+        return; // Skip adding attribute if color is nil
+    }
+    
+    NSArray *matches = [self.string matchesWithDetails:RX(regExPattern)];
+    for (RxMatch *match in matches) {
+        [self addAttribute:NSForegroundColorAttributeName
+                     value:color
+                     range:match.range];
     }
 }
 

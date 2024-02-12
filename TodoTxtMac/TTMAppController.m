@@ -52,7 +52,7 @@
 #import "TTMDocumentStatusBarText.h"
 
 // Default user preference values, including those for saved filters
-static NSDictionary *defaultValues() {
+static NSDictionary *defaultValues(void) {
     
     static NSData *defaultPredicateData = nil;
     if (defaultPredicateData == nil) {
@@ -88,14 +88,22 @@ static NSDictionary *defaultValues() {
                 @NO, @"useCustomColorForDueDates",
                 @NO, @"useCustomColorForThresholdDates",
                 @NO, @"useCustomColorForCreationDates",
-                [NSKeyedArchiver archivedDataWithRootObject:[NSColor redColor]], @"dueTodayColor",
-                [NSKeyedArchiver archivedDataWithRootObject:[NSColor purpleColor]], @"overdueColor",
-                [NSKeyedArchiver archivedDataWithRootObject:[NSColor darkGrayColor]], @"projectColor",
-                [NSKeyedArchiver archivedDataWithRootObject:[NSColor darkGrayColor]], @"contextColor",
-                [NSKeyedArchiver archivedDataWithRootObject:[NSColor darkGrayColor]], @"tagColor",
-                [NSKeyedArchiver archivedDataWithRootObject:[NSColor darkGrayColor]], @"dueDateColor",
-                [NSKeyedArchiver archivedDataWithRootObject:[NSColor darkGrayColor]], @"thresholdDateColor",
-                [NSKeyedArchiver archivedDataWithRootObject:[NSColor darkGrayColor]], @"creationDateColor",
+                //[NSKeyedArchiver archivedDataWithRootObject:[NSColor redColor]], @"dueTodayColor",
+                //[NSKeyedArchiver archivedDataWithRootObject:[NSColor purpleColor]], @"overdueColor",
+                //[NSKeyedArchiver archivedDataWithRootObject:[NSColor darkGrayColor]], @"projectColor",
+                //[NSKeyedArchiver archivedDataWithRootObject:[NSColor darkGrayColor]], @"contextColor",
+                //[NSKeyedArchiver archivedDataWithRootObject:[NSColor darkGrayColor]], @"tagColor",
+                //[NSKeyedArchiver archivedDataWithRootObject:[NSColor darkGrayColor]], @"dueDateColor",
+                //[NSKeyedArchiver archivedDataWithRootObject:[NSColor darkGrayColor]], @"thresholdDateColor",
+                //[NSKeyedArchiver archivedDataWithRootObject:[NSColor darkGrayColor]], @"creationDateColor",
+                [NSKeyedArchiver archivedDataWithRootObject:[NSColor systemRedColor] requiringSecureCoding:NO error:nil], @"dueTodayColor",
+                [NSKeyedArchiver archivedDataWithRootObject:[NSColor systemPurpleColor] requiringSecureCoding:NO error:nil], @"overdueColor",
+                [NSKeyedArchiver archivedDataWithRootObject:[NSColor systemPinkColor] requiringSecureCoding:NO error:nil], @"projectColor",
+                [NSKeyedArchiver archivedDataWithRootObject:[NSColor systemBlueColor] requiringSecureCoding:NO error:nil], @"contextColor",
+                [NSKeyedArchiver archivedDataWithRootObject:[NSColor systemMintColor] requiringSecureCoding:NO error:nil], @"tagColor",
+                [NSKeyedArchiver archivedDataWithRootObject:[NSColor darkGrayColor] requiringSecureCoding:NO error:nil], @"dueDateColor",
+                [NSKeyedArchiver archivedDataWithRootObject:[NSColor darkGrayColor] requiringSecureCoding:NO error:nil], @"thresholdDateColor",
+                [NSKeyedArchiver archivedDataWithRootObject:[NSColor systemBrownColor] requiringSecureCoding:NO error:nil], @"creationDateColor",
                 @NO, @"escapeKeyCancelsAllTextChanges",
                 @NO, @"openDefaultTodoFileOnStartup",
                 @"", @"defaultTodoFilePath",
@@ -113,7 +121,7 @@ static NSDictionary *defaultValues() {
 
 // Default user preference values, excluding those for saved filters.
 // Defined to help allow users to reset preferences without losing saved filters.
-static NSDictionary *defaultValuesExcludingFilters() {
+static NSDictionary *defaultValuesExcludingFilters(void) {
     static NSMutableDictionary *defaults = nil;
     if (defaults == nil) {
         defaults = [NSMutableDictionary dictionaryWithDictionary:defaultValues()];

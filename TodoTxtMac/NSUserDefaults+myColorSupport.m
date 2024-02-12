@@ -6,7 +6,8 @@
 @implementation NSUserDefaults(myColorSupport)
 
 - (void)setColor:(NSColor *)aColor forKey:(NSString *)aKey {
-    NSData *theData=[NSKeyedArchiver archivedDataWithRootObject:aColor];
+    //NSData *theData=[NSKeyedArchiver archivedDataWithRootObject:aColor];
+    NSData *theData=[NSKeyedArchiver archivedDataWithRootObject:aColor requiringSecureCoding:NO error:nil];
     [self setObject:theData forKey:aKey];
 }
 
@@ -14,7 +15,8 @@
     NSColor *theColor=nil;
     NSData *theData=[self dataForKey:aKey];
     if (theData != nil)
-        theColor=(NSColor *)[NSKeyedUnarchiver unarchiveObjectWithData:theData];
+        //theColor=(NSColor *)[NSKeyedUnarchiver unarchiveObjectWithData:theData];
+        theColor=(NSColor *)[NSKeyedUnarchiver unarchivedObjectOfClass:[NSColor class] fromData:theData error:nil];
     return theColor;
 }
 
