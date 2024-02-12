@@ -268,6 +268,7 @@ static NSString * const HiddenPattern = @"(?<=^|[ ])(h:1)(?=[ ]|$)";
 }
 
 - (NSAttributedString*)displayText:(BOOL)selected
+                        emphasized:(BOOL)emphasized
                               font:(NSFont*)font
       useHighlightColorsInTaskList:(BOOL)useHighlightColorsInTaskList
                     completedColor:(NSColor*)completedColor
@@ -308,6 +309,7 @@ static NSString * const HiddenPattern = @"(?<=^|[ ])(h:1)(?=[ ]|$)";
     
     // Only change colors if row is not selected and user wants to see highlight colors.
     if (selected || !useHighlightColorsInTaskList) {
+        [as applyColorToFullStringRange: emphasized ? [NSColor whiteColor] : [NSColor blackColor]];
         return as;
     }
     

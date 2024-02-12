@@ -66,6 +66,7 @@
 
         // Get the user's preferred highlight colors or the defaults.
         BOOL selected = ([tableView.selectedRowIndexes containsIndex:row]);
+        BOOL emphasized = [(NSTableCellView *)cell backgroundStyle] == NSBackgroundStyleEmphasized;
         BOOL useHighlightColorsInTaskList = [[NSUserDefaults standardUserDefaults]
                                              boolForKey:@"useHighlightColorsInTaskList"];
         NSColor *completedColor = [NSColor lightGrayColor];
@@ -103,6 +104,7 @@
             [NSColor darkGrayColor];
 
         NSAttributedString *as = [task displayText:selected
+                                        emphasized: emphasized
                                               font:[cell font]
                       useHighlightColorsInTaskList:useHighlightColorsInTaskList
                                     completedColor:completedColor

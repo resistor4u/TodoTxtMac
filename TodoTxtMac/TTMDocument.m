@@ -1403,7 +1403,7 @@ static NSString * const RelativeDueDatePattern = @"(?<=due:)\\S*";
         if (menuItem.tag == self.activeSortType) {
             [menuItem setState:NSControlStateValueOn];
         } else {
-            [menuItem setState:NSOffState];
+            [menuItem setState:NSControlStateValueOff];
         }
     }
     // Check active filter menu item.
@@ -1588,9 +1588,11 @@ static NSString * const RelativeDueDatePattern = @"(?<=due:)\\S*";
     NSTableView * tableView = self.tableView;
     NSRect rect = NSMakeRect(0,0, INFINITY, tableView.rowHeight);
     NSInteger columnIndex = 0;
-    CGFloat maxSize = 0;
+    CGFloat maxSize = CGRectGetWidth([tableView rectOfColumn:columnIndex]) * 0.8;
     for (NSInteger i = 0; i < tableView.numberOfRows; i++) {
         NSCell *cell = [tableView preparedCellAtColumn:columnIndex row:i];
+        // 'preparedCellAtColumn:row:' is deprecated: first deprecated in macOS 10.10 - Use View Based TableView and -viewAtColumn:row:
+        //NSCell *cell = [tableView viewAtColumn:columnIndex row:i makeIfNecessary:NO];
         NSSize size = [cell cellSizeForBounds:rect];
         maxSize = MAX(maxSize, size.width);
     }
